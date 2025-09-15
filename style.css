@@ -6,21 +6,129 @@
 
 body {
   background-color: #fffbf8;
+  margin: 2vh;
 }
 
 h1 {
   font-family: "Courier Prime", monospace;
   font-weight: lighter;
+  text-align: center;
+  font-size: 3.5vh;
 }
 
 h2 {
   font-family: "Inria Sans", sans-serif;
   font-weight: lighter;
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 3vh;
 }
 
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding: 20px;
+h3 {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 2.5vh;
 }
+
+/* .grid_1-1 {
+  font-size: 2.5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  height: 100vh;
+} */
+
+/* button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+} */
+
+li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Inria Sans", sans-serif;
+  font-size: 2vh;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  color: grey;
+}
+
+li input {
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  width: 75%;
+  padding: 12px 20px;
+  margin-bottom: 50px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+  border-color: red;
+  outline: none;
+  box-shadow: 0 0 5px rgba(106, 173, 255, 0.5);
+}
+
+button[id="submit"] {
+  width: 100px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #6eadff;
+  background: #abcfff;
+  cursor: pointer;
+}
+
+button[id="submit"]:hover {
+  background: #6eadff;
+  color: white;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #6eadff;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background: #abcfff;
+}
+
+/* .streg {
+  width: 2px;
+  height: 80%;
+  background-color: black;
+} */
+
+/* .btn-undone {
+  width: 40px;
+  height: 40px;
+  background-color: #fffbf8;
+  border: 2px solid #6eadff;
+  border-radius: 50%;
+}
+
+.btn-done {
+  width: 40px;
+  height: 40px;
+  background-color: #abcfff;
+  border: 2px solid #6eadff;
+  border-radius: 50%;
+  cursor: pointer;
+} */
