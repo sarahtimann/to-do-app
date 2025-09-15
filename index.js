@@ -3,12 +3,14 @@ const toDoArr = [];
 const submit = document.querySelector("#submit");
 const todoNameInput = document.querySelector("#todo_name_input");
 const todoContainer = document.querySelector("#todo_container");
+const priorityInput = document.querySelector("#todo_priority_input");
 
 submit.addEventListener("click", subMitTodo);
 
 function subMitTodo(evt) {
   const todoObj = {
     name: todoNameInput.value,
+    priority: priorityInput.value,
     id: self.crypto.randomUUID(),
     done: false,
   };
@@ -33,7 +35,7 @@ function writeTodos() {
     // todoContainer.innerHTML += `<li>er et LI element</li>`;
     //     todoContainer.innerHTML += `<li> <h2>${todoObj.name}</h2>    <input type="checkBox" name="todo" ${todoObj.done ? "checked" : ""} /></li>`;
     todoContainer.innerHTML += `<li data-id="${todoObj.id}">
-  <h3>${todoObj.name}</h3>
+<h3>${todoObj.name} (${todoObj.priority})</h3>
   <div class="todo-li">
   <input type="checkBox" name="todoCheck" ${isChecked} />
   <button class="delete-btn">Slet</button>
