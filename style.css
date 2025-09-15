@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffbf8;
+}
+
+h1 {
+  font-family: "Courier Prime", monospace;
+  font-weight: lighter;
+}
+
+h2 {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: lighter;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
