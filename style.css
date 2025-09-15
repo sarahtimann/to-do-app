@@ -52,9 +52,9 @@ h3 {
 
 li {
   display: flex;
-  list-style: none;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
+  list-style: none;
   font-family: "Inria Sans", sans-serif;
   font-size: 2vh;
   padding: 10px;
@@ -63,8 +63,14 @@ li {
   color: grey;
 }
 
-li input {
+/* li input {
   margin-right: 10px;
+} */
+
+.todo-li {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 input[type="text"] {
@@ -77,14 +83,16 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border-color: red;
+  border-color: grey;
   outline: none;
   box-shadow: 0 0 5px rgba(106, 173, 255, 0.5);
 }
 
 button[id="submit"] {
-  width: 100px;
-  height: 45px;
+  padding: 10px;
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: 2px solid #6eadff;
   background: #abcfff;
@@ -96,10 +104,20 @@ button[id="submit"]:hover {
   color: white;
 }
 
+.delete-btn {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ff6e6e;
+  background: #ffabab;
+  cursor: pointer;
+}
+
 input[type="checkbox"] {
   appearance: none;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border: 2px solid #6eadff;
   border-radius: 50%;
   background: #fff;
