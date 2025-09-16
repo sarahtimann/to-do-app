@@ -1,10 +1,12 @@
 * {
+  /* Reset styles */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  /* Hovedstyling */
   background-color: #fffbf8;
   margin: 2vh;
 }
@@ -31,6 +33,7 @@ h3 {
 }
 
 li {
+  /* Styling af liste */
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -43,12 +46,14 @@ li {
 }
 
 .todo-li {
+  /* Styling af todo-liste */
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
 input[type="text"] {
+  /* Styling af inputfelt */
   width: 75%;
   padding: 12px 20px;
   margin-bottom: 20px;
@@ -58,12 +63,17 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
+  /* Fokus-effekt på inputfelt */
   border-color: grey;
   outline: none;
   box-shadow: 0 0 5px rgba(106, 173, 255, 0.5);
 }
 
 button[id="submit"] {
+  /* Styling af submit-knap */
+  font-family: "Inria Sans", sans-serif;
+  font-size: 2.5vh;
+  font-weight: lighter;
   padding: 10px;
   margin-left: 20px;
   width: 50px;
@@ -75,32 +85,44 @@ button[id="submit"] {
 }
 
 button[id="submit"]:hover {
-  background: #6eadff;
-  color: white;
+  /* Hover-effekt på submit-knap */
+  background: #98c4ff;
 }
 
 .priority {
+  /* Styling af prioritet-input */
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-family: "Inria Sans", sans-serif;
   margin-bottom: 20px;
 }
 
 label {
+  /* Styling af label */
   margin-right: 10px;
   font-size: 2.5vh;
   font-weight: lighter;
 }
 
 #todo_priority_input {
+  /* Styling af prioritet-inputfelt */
+  font-family: "Inria Sans", sans-serif;
+  font-size: 1.7vh;
+  font-weight: lighter;
   padding: 10px;
   border: 2px solid #6eadff;
   background: #abcfff;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .delete-btn {
+  /* Styling af slet-knap */
+  font-family: "Inria Sans", sans-serif;
+  font-size: 1.7vh;
+  font-weight: lighter;
   padding: 10px;
   width: 50px;
   height: 50px;
@@ -111,6 +133,7 @@ label {
 }
 
 input[type="checkbox"] {
+  /* Styling af checkbox */
   appearance: none;
   width: 50px;
   height: 50px;
@@ -121,5 +144,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
+  /* Styling af markeret checkbox */
+  border: 2px solid #6eadff;
   background: #abcfff;
 }
