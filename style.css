@@ -148,3 +148,9 @@ input[type="checkbox"]:checked {
   border: 2px solid #6eadff;
   background: #abcfff;
 }
+
+@media (min-width: 800px) {
+  body {
+    margin: 50px 100px 50px 100px;
+  }
+}

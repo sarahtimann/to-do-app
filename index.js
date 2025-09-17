@@ -5,7 +5,7 @@ const todoNameInput = document.querySelector("#todo_name_input"); // Inputfelt t
 const todoContainer = document.querySelector("#todo_container"); // Container til at vise todo-liste
 const priorityInput = document.querySelector("#todo_priority_input"); // Inputfelt til opgaveprioritet
 
-submit.addEventListener("click", subMitTodo); // Når der klikkes på tilføj knappen, kaldes funktionen subMitTodo
+submit.addEventListener("click", subMitTodo); // Når der klikkes på tilføj knappen, kaldes funktionen subMitTo
 
 function subMitTodo(evt) {
   // Når der klikkes på tilføj knappen
